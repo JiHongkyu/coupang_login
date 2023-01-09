@@ -1,0 +1,106 @@
+header{
+    text-align: center;
+    height: 115px;
+}
+header h1 a img {
+    width: 250px;
+    padding-top: 50px;
+}
+main { 
+    
+    text-align: center; 
+    width: 500px;
+    margin: 0 auto;
+}
+main #loginFrm {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+}
+main #loginFrm fieldset ul li {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 10px;
+    position: relative;
+}
+main #loginFrm fieldset ul li.error { display: none; }
+main #loginFrm fieldset ul li .id_bg { width: 50px;}
+main #loginFrm fieldset ul li .id_bg::after {
+    display: block;
+    content: '';
+    background-image: url(../images/icon.svg);
+    width: 21px; height: 18px;
+    position: absolute;
+    left: 14px; top: 14px;
+}
+main #loginFrm fieldset ul li .pw_bg::after {
+    display: block;
+    content: '';
+    background-image: url(../images/icon.svg);
+    background-position: -21px -1px;
+    width: 21px; height: 21px;
+    position: absolute;
+    left: 14px; top: 14px;
+}
+main #loginFrm fieldset ul li .pw_bg { width: 50px;}
+main #loginFrm fieldset ul li .pw_hide {
+    background-image: url(../images/icon.svg) ;
+    background-position: -105px 0px;
+    margin-top: 12px;
+    width: 21px; height: 21px;
+}
+main #loginFrm fieldset ul li span input {
+    width: 400px; height: 45px;
+    border: none;
+    border-left: 1px solid #aaa;
+    padding-left: 10px;
+}
+main #loginFrm fieldset .login_btn {
+    background-color: #0074e9;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 2px #aaa;
+}
+main #loginFrm fieldset .btm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+main #loginFrm fieldset .btm label { display: flex; align-items: center; }
+main #loginFrm fieldset .btm label input {appearance: none;} 
+main #loginFrm fieldset .btm label input + span::before {
+    display: inline-block;
+    background-image: url(../images/icon.svg);
+    background-position: -105px -50px;
+    content: '';
+    width: 18px; height: 18px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+main #loginFrm fieldset .btm label input:checked + span::before {
+    display: inline-block;
+    background-image: url(../images/icon.svg);
+    background-position: -84px -21px;
+    content: '';
+    width: 18px; height: 18px;
+    border: 1px solid #ccc;
+}
+main #loginFrm fieldset .btm .id_pw_search::after {
+    display: inline-block;
+    background-image: url(../images/icon.svg);
+    content: '';
+    width: 11px; height: 19px;
+    background-position: -101px -20px;
+}
+main .join_link {
+    color: #0074e9;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0; margin-top: 30px;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px #aaa;
+}
+footer { text-align: center; font-size: 0.85rem; padding-top: 20px;}

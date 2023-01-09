@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 로그인</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="images/logo.png" alt="쿠팡"></a></h1>
+    </header>
+    <main>
+        <form action="#" method="post" id="loginFrm">
+            <fieldset>
+                <legend class="skip">로그인 양식</legend>
+                <ul>
+                    <li>
+                        <span class="id_bg"></span>
+                        <span><input type="text" name="user_id" class="user_id" placeholder="아이디(이메일)"></span>
+                    </li>
+                    <li class="error id_error">아이디(이메일)를 입력해주세요.</li>
+                    <li>
+                        <span class="pw_bg"></span>
+                        <span><input type="password" name="user_pw" class="user_pw" placeholder="비밀번호"></span>
+                        <span class="pw_hide" title="문자 보이기"></span>
+                    </li>
+                    <li class="error pw_error">비밀번호를 입력해주세요.</li>
+                </ul>
+                <div class="btm">
+                    <label>
+                        <input type="checkbox">
+                        <span>로그인 상태 유지</span>
+                    </label>
+                    <a href="#" class="id_pw_search">아이디(이메일)/비밀번호 찾기</a>
+                </div>
+                <button type="submit" class="login_btn">로그인</button>
+            </fieldset>
+        </form>
+        <a href="#" class="join_link">회원가입</a>
+    </main>
+    <footer>
+        &copy;Coupang Crop. All rights reserved.
+    </footer>
+</body>
+</html>
